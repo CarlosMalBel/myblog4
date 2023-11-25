@@ -2,6 +2,7 @@ title: Mi blog desde cero
 email: lgarciavelazquez@educantabria.es
 baseurl: /myblog4
 url: https://lgarciavelazquez.github.io
+repository: lgarciavelazquez/myblog4
 collections:
   authors:
     output: true
