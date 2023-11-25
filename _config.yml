@@ -1,0 +1,30 @@
+title: Mi blog desde cero
+email: lgarciavelazquez@educantabria.es
+baseurl: /myblog4
+url: https://lgarciavelazquez.github.io
+collections:
+  authors:
+    output: true
+  pages:
+    output: true  
+
+defaults:
+    - scope:
+        path: ""
+        type: "authors"
+      values:
+         layout: "author"
+    - scope:
+        path: ""
+        type: "posts"
+      values:
+         layout: "post"                
+    - scope:
+        path: ""
+      values:
+         layout: "default" 
+
+plugins:
+   - jekyll-feed
+   - jekyll-sitemap
+   - jekyll-seo-tag       
