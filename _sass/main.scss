@@ -1,3 +1,111 @@
 .current {
     color: green;
 }
+*Reseteamos ciertos estilos que vienen por defecto*/
+/*
+*{
+    Margen exterior de una caja
+    margin: 0px;
+    Margen interior dentro de una caja
+    padding: 0px;
+}
+*/
+
+body {
+    background: lightgray;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#container {
+    /*width: 70%;*/
+    width: 1100px;
+    /*Centramos  ese elemento al centro de la página web*/
+    margin: 0px auto;
+    border: 1px solid  black;
+}
+
+header {
+    background: red;
+    height: 100px;
+    width: 100%;
+    margin: 0px;
+    text-align: center;
+    /*Centramos texto header verticalmente. Se pone misma altura que caja.*/
+    line-height: 100px;
+    /*Cambia color texto*/
+    color: white;
+    /*pone borde por debajo*/
+    border-bottom: 3px dashed black;
+}
+
+nav {
+    background: lightblue;
+    height: 50px;
+    border-bottom: 1px solid black;
+}
+
+/*Configuramos la nav, y elementos que hay dentro de la nav: ul i li*/
+nav ul li {
+    /*Quiere decir que cada uno de los elementos flota a la izquierda y se ponen uno al lado del otro*/
+    float: left;
+    /*Quitamos estilos que vienen por defecto, en este caso las viñetas*/
+    list-style: none;
+    margin: 10px;
+    /*Centramos enlaces de la barra de navegación*/
+    line-height: 30px;
+}
+
+.clearfix {
+    /*Insertamos una caja y  no permitimos objetos a ambos lados. */
+    /* Cuando flotamos un elemento, los elementos de abajo quedan en su sitio*/
+    clear: both;
+
+}
+
+#content {
+    /*Enviamos caja a la izquierda*/
+    float:left;
+     /*Con el padding, el aside se hace mas grande y se pone debajo al no entrar. Solución, al 80% se le quita el padding a ambos lados, es decir, 80px.*/
+    width: calc(80% - 80px);
+    min-height: 500px;
+    background: white;
+    padding: 40px;
+
+}
+
+aside {
+    /*Enviamos caja a la izquierda. Se coloca al lado del content*/
+    float: left;
+    /*Con el padding, el aside se hace mas grande y se pone debajo al no entrar. Solución, al 20% se le quita el padding a ambos lados, es decir, 20px.*/
+    width: calc(20% - 20px);
+    min-height: 500px;
+    background: white;
+    /*Margenes interiores*/
+    padding: 10px;
+}
+
+footer {
+    background: black;
+    color: white;
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+}
+
+/*Seleccionamos el 1º articulo y ponemos un borde encima*/
+.article:first-child{
+    padding-top: 10px;
+    border-top: 1px solid black;
+}
+
+.article {
+    color: white;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid black;
+    padding-bottom: 10px;
+}
+
+article h2 {
+    font-size: 25px;
+}
