@@ -1,0 +1,44 @@
+---
+layout: default
+title: Jekyll
+---
+
+<h1>{{"Variables de Jekyll"  | upcase}}</h1>
+site.time={{ site.time }}<br>
+site.url={{ site.url }}<br>
+site.baseurl={{ site.baseurl }}<br>
+Listado de pages:
+{% for pages in site.pages %}
+    {{pages.url}}<br>
+{% endfor%}
+Listado de posts:
+{% for pages in site.posts %}
+    {{pages.url}}<br>
+{% endfor%}
+{% for pages in site.static_files %}
+    {{pages.url}}<br>
+{% endfor%}
+Listado de páginas directorio raíz:
+{% for pages in site.html_pages %}
+    {{pages.url}}<br>
+{% endfor%}
+Listado de autores:
+{% for pages in site.authors %}
+    {{pages.url}}<br>
+{% endfor%}
+Listado yaml de navigation:
+{% for data in site.data.navigation %}
+    {{data.name}}<br>
+    {{data.link}}<br>
+{% endfor%}
+<h1>{{"Filtros de Jekyll"  | upcase}}</h1>
+{% for pages in site.html_pages %}
+    {{pages.url}}<br>
+    {{pages.url | relative_url}}<br>
+    {{pages.url | absolute_url}}<br>
+{% endfor%}
+Fecha cadena={{ site.time | date_to_string}}<br>
+{{ "# hola mundo!" |  markdownnify }}
+
+
+
