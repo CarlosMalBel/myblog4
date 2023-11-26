@@ -7,22 +7,24 @@ title: Jekyll
 site.time={{ site.time }}<br>
 site.url={{ site.url }}<br>
 site.baseurl={{ site.baseurl }}<br>
-Listado de pages:
+Listado de pages:<br>
 {% for pages in site.pages %}
     {{pages.url}}<br>
 {% endfor%}
-Listado de posts:
+Listado de posts:<br>
 {% for pages in site.posts %}
     {{pages.url}}<br>
 {% endfor%}
 {% for pages in site.static_files %}
     {{pages.url}}<br>
 {% endfor%}
-Listado de páginas directorio raíz:
+Listado de páginas directorio raíz:<br>
 {% for pages in site.html_pages %}
+{% if page.section %}
     {{pages.url}}<br>
+{% endif %}
 {% endfor%}
-Listado de autores:
+Listado de autores:<br>
 {% for pages in site.authors %}
     {{pages.url}}<br>
 {% endfor%}
