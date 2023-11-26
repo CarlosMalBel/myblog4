@@ -6,11 +6,38 @@
     {% include head.html %}
     </head>
     <body>
-        <div>
+        <div id="container">
+            <header>
+                {% include header.html %}
+                Encabezadooooooo
+            </header>
             <nav>
                 {% include navigation.html %}
+                Navegacion
             </nav>
-               {{content}}
+            <div class="clearfix">
+
+            </div>
+            <aside>
+                <h2>Barra lateral</h2>
+                <!--{% include navigation.html %}-->
+                navegacion    
+                <form>
+                    <input type="text">
+                    <input type="submit" value="Buscar">
+                </form>
+            </aside>      
+            <section id="content">
+                {{content}}
+            </section>
+            <div class="clearfix">
+            
+            </div>
+            <!--pie de páginas: contiene copyright, contectos, información del sitio, información del autor, como navegar por el sitio -->
+            <footer>
+                {% include footer.html %} 
+            </footer>
+               
         </div>   
     </body>
 </html>
