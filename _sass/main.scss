@@ -12,8 +12,8 @@
 */
 
 body {
-     background: purple;
-    /*background: # A9BDCF;*/
+     /*background: purple;*/
+    background: #D8E5EB ;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -37,11 +37,11 @@ body {
 }*/
 
 header {
-    background: pink;
+    background: #B5CCD6  ;
 }
 
 nav {
-    background: yellow;
+    background: #8BADBB  ;
     height: 50px;
 }
 
@@ -65,7 +65,7 @@ aside {
     /*Con el padding, el aside se hace mas grande y se pone debajo al no entrar. Solución, al 20% se le quita el padding a ambos lados, es decir, 20px.*/
     width: calc(20% - 20px);
     min-height: 500px;
-    background: blue;
+    background: #7097A6  ;
     /*Margenes interiores*/
     padding: 10px;
     border: 1;
@@ -84,7 +84,7 @@ aside ul li {
      /*Con el padding, el aside se hace mas grande y se pone debajo al no entrar. Solución, al 80% se le quita el padding a ambos lados, es decir, 80px.*/
     width: calc(80% - 20px);
     min-height: 500px;
-    background: red;
+    background: #547D8E  ;
     padding: 10px;
     border: 1;
 
@@ -93,7 +93,7 @@ aside ul li {
 
 
 footer {
-    background: black;
+    background: #416C7E  ;
     color: white;
     text-align: center;
     height: 50px;
@@ -103,11 +103,11 @@ footer {
 /*Seleccionamos el 1º articulo y ponemos un borde encima*/
 .article:first-child{
     padding-top: 10px;
-    border-top: 1px solid black;
+    border-top: 1px solid ;
 }
 
 .article {
-    color: white;
+    color: #336072  ;
     margin-top: 15px;
     margin-bottom: 15px;
     border-bottom: 1px solid black;
