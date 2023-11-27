@@ -2,7 +2,8 @@
 layout: author
 short_name: luis
 name: Luis García
-position: Streamer
+position: Profesor ES
 ---
 
-Luis hace una página web
+# Esta es la página de Luis
+## Uno de nuestros colaboradores 

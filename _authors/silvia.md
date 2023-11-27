@@ -2,7 +2,8 @@
 layout: author
 short_name: silvia
 name: Silvia Oslé
-position: Mujer
+position: Profesora EOI
 ---
 
-Silvia es la mujer de Luis
+# Esta es la página de Silvia
+## Nuestra última gran colaboradora

@@ -8,26 +8,22 @@
     <body>
         <div id="container">
             <header>
+                CABECERA (HEADER)<br>
                 {% include header.html %}
-                Encabezadooooooo
             </header>
             <nav>
+                MENU DE NAVEGACION (NAV)<br>
                 {% include navigation.html %}
-                Navegacion
             </nav>
             <div class="clearfix">
 
             </div>
             <aside>
-                <h2>Barra lateral</h2>
-                <!--{% include navigation.html %}-->
-                navegacion    
-                <form>
-                    <input type="text">
-                    <input type="submit" value="Buscar">
-                </form>
+                BARRA LATERAL (ASIDE)
+                {% include navigation.html %}
             </aside>      
             <section id="content">
+                SECCION (SECTION)
                 {{content}}
             </section>
             <div class="clearfix">
@@ -35,6 +31,7 @@
             </div>
             <!--pie de páginas: contiene copyright, contectos, información del sitio, información del autor, como navegar por el sitio -->
             <footer>
+                PIE DE PAGINA (FOOTER)<br>
                 {% include footer.html %} 
             </footer>
                

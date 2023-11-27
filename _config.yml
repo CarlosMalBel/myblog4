@@ -6,8 +6,13 @@ repository: lgarciavelazquez/myblog4
 collections:
   authors:
     output: true
+    #permalink: /:collection/:title
+    permalink: /:collection/:title
   pages:
-    output: true  
+    output: true   
+  posts:
+     output: true
+     permalink: /blog/:name   
 
 defaults:
     - scope:
