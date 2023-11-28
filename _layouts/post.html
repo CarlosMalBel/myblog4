@@ -6,10 +6,14 @@ layout: default
 
 <!---->
 
-<article>
-    <header>
+
+<header>
         <h1>{{page.title | escape }}</h1>
-    </header>
+</header>
+{% if page.image %}
+  <img src="{{ site.github.url }}/assets/img/{{ page.image }}">
+{% endif %}
+<article>
 <p>
     {{page.date | date_to_string}}
     {% assign author = site.authors | where: "short_name" , page.author | first %}
