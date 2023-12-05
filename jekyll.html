@@ -7,6 +7,7 @@ title: Ejemplos de Jekyll
 <h1>{{ page.title }}</h1>
 <h3>{{ "El titulo de la pagina es: " | append: page.title }}</h3>
 <h3>{{ "Esta página utiliza la plantilla: " | append: page.layout }}</h3>
+<hr>
 <h3>{{ 'SITE VARIABLES DE JEKYLL: ' }}</h3>
 site.title={{ site.title}}<br>
 site.email={{ site.email}}<br>
@@ -15,36 +16,44 @@ site.time={{ site.time }}<br>
 site.url={{ site.url }}<br>
 site.github.url={{ site.github.url }}<br>
 site.baseurl={{ site.baseurl }}<br>
+<hr>
 <h3>{{ "Listado de paginas (pages)" }}</h3>
 {% for pages in site.pages %}
     {{pages.url}}<br>
 {% endfor%}
+<hr>
 <h3>{{ "Listado de posts con una reseña" }} </h3>
 {% for pages in site.posts %}
     {{pages.url}}--->{{pages.excerpt}}<br>
 {% endfor%}
+<hr>
 <h3>{{ "Listado de páginas directorio raíz (site.html_pages):"  }}</h3>
 {% for pages in site.html_pages %}
     {% if pages.title %}
         {{pages.url}}<br>
     {% endif %}    
 {% endfor%}
+<hr>
 <h3> {{ "Listado de autores" }}</h3>
 {% for pages in site.authors %}
     {{pages.url}}<br>
 {% endfor%}
+<hr>
 <h3> {{ "Listado de todos las colecciones incluida los posts" }}</h3>
 {% for pages in site.documents %}
     {{pages.url}}<br>
 {% endfor%}
+<hr>
 <h3> {{ "Listado posts con tags de idiomas" }}</h3>
 {% for pages in site.tags.idiomas %}
     {{pages.url}}<br>
 {% endfor%}
+<hr>
 <h3>{{ "Listado yaml de navigation" }}</h3>
 {% for data in site.data.navigation %}
     {{data.name}}--->{{data.link}}<br>
 {% endfor%}
+<hr>
 <h3>{{"FILTROS JEKYLL" }}</h3>
 {% for pages in site.html_pages %}
     URL:{{pages.url}}<br>
